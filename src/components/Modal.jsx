@@ -13,7 +13,7 @@ export const Modal = ({ closeModal, onSubmit, defaultValue }) => {
   const [errors, setErrors] = useState("");
 
   const validateForm = () => {
-    if (formState.page && formState.description && formState.status) {
+    if (formState.page && formState.description && formState.status) { 
       setErrors("");
       return true;
     } else {
@@ -23,7 +23,7 @@ export const Modal = ({ closeModal, onSubmit, defaultValue }) => {
           errorFields.push(key);
         }
       }
-      setErrors(errorFields.join(", "));
+      setErrors(errorFields.join(", "))
       return false;
     }
   };
